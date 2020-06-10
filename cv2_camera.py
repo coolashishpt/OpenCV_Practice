@@ -4,5 +4,9 @@ cam = cv.VideoCapture(0)
 while True:
     ret, frame = cam.read()
     cv.imshow("Camera", frame)
-    cv.waitKey(0)
+    if cv.waitkey(1) & 0xFF == ord("q"):
+        break
+
+cam.release()
+cv.destroyAllWindows()
 
