@@ -8,8 +8,10 @@ def nothing(x):
 
 
 
-cv.createTrackbar("CP", "Messi", 0, 255, nothing)
+cv.createTrackbar("CP", "Messi", 10, 400, nothing)
 
+switch = "color/gray"
+cv.createTrackbar(switch, "Messi", 0, 1, nothing)
 
 while(1):
     img = cv.imread("messi5.jpg")
@@ -21,7 +23,12 @@ while(1):
     if cv.waitKey(1) & 0xFF == 27: # Escape key for closing window
         break
 
-    img = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
+    s = cv.getTrackbarPos(switch, "Messi")
+
+    if s == 0:
+        pass
+    else:
+        img = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
 
     img = cv.imshow("Messi", img)
 
