@@ -25,6 +25,7 @@ while(1):
     b = cv.getTrackbarPos("B", "Image Trackbar")
     g = cv.getTrackbarPos("G", "Image Trackbar")
     r = cv.getTrackbarPos("R", "Image Trackbar")
+    s = cv.getTrackbarPos(switch, "Image Trackerbar")
 
     if s == 0:
         img[:] = 0
