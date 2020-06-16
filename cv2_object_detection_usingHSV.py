@@ -5,6 +5,7 @@ def nothing(x):
     pass
 
 cam = cv.VideoCapture(0)
+#for uses of camera 
 
 cv.namedWindow("Tracker")
 cv.createTrackbar("LH", "Tracker", 0, 255, nothing)
@@ -13,6 +14,7 @@ cv.createTrackbar("LV", "Tracker", 0, 255, nothing)
 cv.createTrackbar("UH", "Tracker", 255, 255, nothing)
 cv.createTrackbar("US", "Tracker", 255, 255, nothing)
 cv.createTrackbar("UV", "Tracker", 255, 255, nothing)
+
 
 while True:
     _, frame = cam.read()
