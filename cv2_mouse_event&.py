@@ -1,7 +1,7 @@
 import numpy as np
 import cv2 as cv
 
-
+# Mouse Events
 def click_event(event, x, y, flags, param):
     if event == cv.EVENT_RBUTTONDOWN:
         cv.circle(img, (x, y), 3, (0, 0, 255), -1)
@@ -24,7 +24,7 @@ def click_event(event, x, y, flags, param):
 
         cv.imshow("Color", myimage)
 
-
+# Operations with Images
 # img = np.zeros((512, 512, 3))
 img = cv.imread("messi5.jpg")
 point = []
