@@ -1,7 +1,7 @@
 import numpy as np
 import cv2 as cv
 
-# Mouse Events
+# Mouse Events operations
 def click_event(event, x, y, flags, param):
     if event == cv.EVENT_RBUTTONDOWN:
         cv.circle(img, (x, y), 3, (0, 0, 255), -1)

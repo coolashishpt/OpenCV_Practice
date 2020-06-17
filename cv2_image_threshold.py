@@ -2,7 +2,7 @@ import cv2 as cv
 
 img = cv.imread("gradient.png")
 
-# Checking all threshold types
+# Checking all threshold types with single Image
 _, th1 = cv.threshold(img, 50, 255, cv.THRESH_BINARY)
 _, th2 = cv.threshold(img, 200, 255, cv.THRESH_BINARY_INV)
 _, th3 = cv.threshold(img, 50, 255, cv.THRESH_TRUNC)
