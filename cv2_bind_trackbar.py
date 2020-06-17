@@ -5,7 +5,7 @@ img = np.zeros((300, 512, 3), np.uint8)
 
 cv.namedWindow("Image Trackbar")
 
-
+#####
 def nothing(x):
     print(x)
 
