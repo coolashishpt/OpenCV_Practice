@@ -16,4 +16,4 @@ plt.show()
 
 
 cv.waitKey(0)
-CV.destroyAllWindows()
+cv.destroyAllWindows()
